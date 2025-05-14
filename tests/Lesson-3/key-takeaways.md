@@ -25,7 +25,7 @@
 * snake_case: chưa dùng 
 * kebab-case: đặt tên file
 * camelCase: đặt tên biến 
-+ PascalCase: đặt tên class
+* PascalCase: đặt tên class
 ### Console
 Các cách sử dụng console: 
 * console.log("Nội dung")
