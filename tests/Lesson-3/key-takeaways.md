@@ -34,8 +34,10 @@ Các cách sử dụng console:
 * console.log(\`${variable}\`)
 ### Object
 * Đối tượng, dùng để lưu trữ tập hợp các giá trị vào cùng 1 biến hoặc hằng số
-* Cách khai báo Object: **let/const <tên object> = {thuộc tính: giá trị, ...}**<br>- thuộc tính: cách đặt tên giống quy tắc đặt tên biến<br>- giá trị: có kiểu dữ liệu giống biến hoặc là 1 object khác<br>- Update: **<tên object>.<thuộc tính thay đổi> = new value** hoặc **<tên object>["thuộc tính thay đổi"] = new value**<br>
+* Cách khai báo Object: **let/const <tên object> = {thuộc tính: giá trị, ...}**<br>- thuộc tính: cách đặt tên giống quy tắc đặt tên biến<br>- giá trị: có kiểu dữ liệu giống biến hoặc là 1 object khác
+* Update: **<tên object>.<thuộc tính thay đổi> = new value** hoặc **<tên object>["thuộc tính thay đổi"] = new value**<br>
 *Note: Nếu khai báo là const, với object có thể thay đổi thông tin thuộc tính nhưng không thể add thêm thuộc tính*
+* Deleted thuộc tính: **delete <tên object>.<thuộc tính cần xóa>**
 ### Logic Operator
 * && : và
 * || : hoặc
