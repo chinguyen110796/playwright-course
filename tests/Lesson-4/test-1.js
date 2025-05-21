@@ -35,16 +35,46 @@ calculateDistance(1000, 24);
 // 3. Hành tinh kỳ lạ
 function convertTimeToHex(time) {
   let hexTime = time.toString(16);
-  console.log(`Thời gian trên hành tinh kỳ lạ là ${hexTime}.`);
+  console.log(`Thời gian trên hành tinh kỳ lạ là ${hexTime} giây.`);
 }
 convertTimeToHex(120);
 
 // 4. Khám phá kho báu
+// Cách 1: Sử dụng hàm for of
 function decryptCode(code) {
-  let listChar = code.split("");
-  console.log(listChar);
-  listChar.forEach((char) => {
-    
-  });
+  let result = "";
+  for (let char of code) {
+    if (char === char.toLowerCase() && char !== char.toUpperCase()) {
+      result += char.toUpperCase();
+    } else if (char === char.toUpperCase() && char !== char.toLowerCase()) {
+      result += char.toLowerCase();
+    } else {
+      result += char;
+    }
+  }
+  console.log(`Mật mã kho báu: ${result}`);
 }
 decryptCode("K14 Challenge");
+
+// Cách 2: Sử dụng map
+function decryptCode1(code) {
+  let listChars = code.split("");
+  for (let i = 0; i < listChars.length; i++) {
+    let char = listChars[i];
+    if (char === char.toLowerCase() && char !== char.toUpperCase()) {
+      listChars[i] = char.toUpperCase();
+    } else if (char === char.toUpperCase() && char !== char.toLowerCase()) {
+      listChars[i] = char.toLowerCase();
+    } else {
+      listChars[i] = char;
+    }
+  }
+  console.log(`Mật mã kho báu: ${listChars.join("")}`);
+}
+decryptCode1("K14 Challenge");
+
+// 5. Trở về Trái Đất
+function returnToEarth() {
+  console.log(`Chuẩn bị trở về Trái Đất!`);
+}
+returnToEarth();
